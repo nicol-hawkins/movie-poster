@@ -16,7 +16,7 @@ function doFetch() {
     let searchTerm = searchElement.value.replace(' ', '+');
     console.log(searchElement.value)
 
-    fetch(`http://www.omdbapi.com/?s=${searchTerm}&plot=full&apikey=187a5752`)
+    fetch(`https://www.omdbapi.com/?s=${searchTerm}&plot=full&apikey=187a5752`)
         .then(response => response.json())
         .then(data => {
             state.data = data.Search;
